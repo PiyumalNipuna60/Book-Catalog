@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Libre Bodoni', serif;
+}
+:root{
+    --primary-color:#755139FF;
+    --secondary-color:#D4B996FF
+}
+body{
+    background-color: var(--primary-color);
+}
+html{
+    font-size: 75.5%;
+}
+.header{
+    width: 100%;
+    height: 500px;
+    color: var(--secondary-color);
+    box-shadow: 0 5px 10px var(--secondary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url();
+    clip-path: circle(60% at left 300px);
+    z-index: -1;
+}
+.row2 img{
+    width: 700px;
+    height: 500px;
+    margin-top: 30px;
+}
+.row2{
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    text-align: center;
+}
+.row2 h2{
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.row1 h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-left: 35px;
+    font-family: 'Bodoni Moda', serif;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    outline: 0;
+    border: 0;
+    width: 350px;
+    height: 35px;
+    padding: 0 0.5rem;
+    font-size: 15px;
+    font-weight: bold;
+}
+.search button{
+    outline: none;
+    border: none;
+    height: 35px;
+    padding: 0,0.5rem;
+}
+.container{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(200px,0.5fr));
+    grid-gap:20px;
+    box-sizing: border-box;
+}
+.card{
+    margin-top: 200px;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 5px rgba(212,185,150,.5);
+    transition: .5s;
+    text-align: center;
+    position: relative;
+
+}
+.card img{
+    width: 100%;
+    height: 400px;
+    border-radius: 1rem 1rem 0 0;
+}
+.card bottom{
+    display: flex;
+    flex-direction: column;
+}

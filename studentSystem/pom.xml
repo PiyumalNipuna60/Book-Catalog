@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>lk.ijse</groupId>
-	<artifactId>studentSystem</artifactId>
+	<artifactId>Book-Catalog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>studentSystem</name>
 	<description>Full Stack application using spring boot and react</description>
@@ -29,7 +29,6 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.12</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -51,7 +50,6 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>5.6.9.Final</version>
 		</dependency>
     </dependencies>
 

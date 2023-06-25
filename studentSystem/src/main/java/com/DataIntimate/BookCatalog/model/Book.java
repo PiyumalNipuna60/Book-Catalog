@@ -1,4 +1,4 @@
-package lk.ijse.studentSystem.model;
+package com.DataIntimate.BookCatalog.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,11 +15,19 @@ import javax.persistence.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Student {
+public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //id eka auto genarate venna
     private int id;
     private String name;
     private String address;
+
+    private String catogery;
+
+    private String author;
+
+    private String title;
+
+    private int price;
 
 }

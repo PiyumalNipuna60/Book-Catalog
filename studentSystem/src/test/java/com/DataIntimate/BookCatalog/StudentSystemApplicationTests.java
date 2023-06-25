@@ -1,4 +1,4 @@
-package lk.ijse.studentSystem;
+package com.DataIntimate.BookCatalog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
