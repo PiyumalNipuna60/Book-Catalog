@@ -1,6 +1,6 @@
 package com.DataIntimate.BookCatalog.controller;
 
-import com.DataIntimate.BookCatalog.model.Book;
+import com.DataIntimate.BookCatalog.dto.BookDto;
 import com.DataIntimate.BookCatalog.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +16,7 @@ public class BookController {
     private BookService bookService;
 
     @PostMapping("/add")
-    public String add(@RequestBody Book book){
+    public String add(@RequestBody BookDto book){
         bookService.saveBook(book);
         return "New Student Added..!";
     }
