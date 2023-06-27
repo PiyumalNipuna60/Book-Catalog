@@ -18,16 +18,10 @@ import javax.persistence.Id;
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //id eka auto genarate venna
-    private int id;
-    private String name;
-    private String address;
-
-    private String catogery;
-
-    private String author;
-
-    private String title;
-
-    private int price;
+    private int bookId;
+    private String  bookName;
+    private String  description;
+    private String  author;
+    private double price;
 
 }
