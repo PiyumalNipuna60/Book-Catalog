@@ -17,7 +17,7 @@ public class BookController {
 
     @PostMapping("/add")
     public String add(@RequestBody Book book){
-        bookService.saveStudent(book);
+        bookService.saveBook(book);
         return "New Student Added..!";
     }
 }
